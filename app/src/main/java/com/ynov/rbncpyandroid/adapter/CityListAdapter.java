@@ -58,7 +58,7 @@ public class CityListAdapter extends RecyclerView.Adapter<CityHolder> {
         City city = cityArrayList.get(position);
         holder.binding.setCity(city);
         ImageView picture = holder.itemView.findViewById(R.id.cityPicture);
-        Picasso.get().load("https://flutter-learning.mooo.com" + city.getPic().getUrl()).resize(50,50).into(picture);
+        Picasso.get().load("https://flutter-learning.mooo.com" + city.getPic().getUrl()).fit().centerCrop().into(picture);
         holder.itemView.setOnClickListener(
                 (view)-> goToDetail(holder, city.getId()) );
     }

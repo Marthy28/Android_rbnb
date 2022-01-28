@@ -18,12 +18,13 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         android:gravity="center">
-<ImageView
-    android:layout_width="100dp"
-    android:layout_height="50dp"
-    android:id="@+id/cityPicture"
-    android:contentDescription="TODO"
-    android:layout_weight="1"/>
+
+        <ImageView
+            android:id="@+id/cityPicture"
+            android:layout_width="220dp"
+            android:layout_height="110dp"
+            android:layout_weight="1"
+            android:contentDescription="TODO" />
 
         <TextView
             android:layout_width="match_parent"

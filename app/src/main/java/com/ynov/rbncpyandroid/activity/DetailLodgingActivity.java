@@ -24,7 +24,7 @@ public class DetailLodgingActivity extends AppCompatActivity {
         setContentView(R.layout.activity_detail_lodging);
         ActivityDetailLodgingBinding binding = DataBindingUtil.setContentView(this, R.layout.activity_detail_lodging);
         binding.price.setText(lodging.getPrice() + "/nuit");
-        Picasso.get().load("https://flutter-learning.mooo.com" + lodging.getIllustrations().getUrl()).into(binding.lodgingPicture);
+        Picasso.get().load("https://flutter-learning.mooo.com" + lodging.getIllustrations().getUrl()).fit().centerCrop().into(binding.lodgingPicture);
         binding.lodgingTitle.setText(lodging.getTitle());
     }
 
