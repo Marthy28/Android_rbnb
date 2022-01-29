@@ -68,11 +68,6 @@ public class CityListAdapter extends RecyclerView.Adapter<CityHolder> {
         return cityArrayList.size();
     }
 
-    public void addCity(City m){
-        cityArrayList.add(m);
-        notifyItemInserted(cityArrayList.size()-1);
-    }
-
     void goToDetail(CityHolder holder, String cityId)
         {
             Request requestMsg = new Request.Builder()
